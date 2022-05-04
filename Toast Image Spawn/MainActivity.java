@@ -1,0 +1,43 @@
+package com.cookandroid.a322p5;
+
+import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.Display;
+import android.view.Gravity;
+import android.view.View;
+import android.view.WindowManager;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.Toast;
+
+@SuppressWarnings("deprecation")
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        setTitle("토스트 이미지");
+
+        final Button button1 = (Button) findViewById(R.id.button1);
+
+        button1.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                ImageView img = new ImageView(getApplication());
+                img.setImageResource(R.drawable.s12);
+                Toast tMsg = Toast.makeText(MainActivity.this, "토스트 연습",
+                        Toast.LENGTH_SHORT);
+
+                Display display = ((WindowManager) getSystemService(WINDOW_SERVICE))
+                        .getDefaultDisplay();
+                int xOffset = (int) (Math.random() * display.getWidth());
+                int yOffset = (int) (Math.random() * display.getHeight());
+
+                tMsg.setView(img);
+                tMsg.setGravity(Gravity.TOP | Gravity.LEFT, xOffset, yOffset);
+                tMsg.show();
+            }
+        });
+    }
+}
