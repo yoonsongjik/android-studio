@@ -1,0 +1,368 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3" >
+
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:src="@drawable/pic1" />
+
+        <ImageView
+            android:id="@+id/iv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:src="@drawable/pic2" />
+
+        <ImageView
+            android:id="@+id/iv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:src="@drawable/pic3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3" >
+
+        <ImageView
+            android:id="@+id/iv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:src="@drawable/pic4" />
+
+        <ImageView
+            android:id="@+id/iv5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:src="@drawable/pic5" />
+
+        <ImageView
+            android:id="@+id/iv6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:src="@drawable/pic6" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3" >
+
+        <ImageView
+            android:id="@+id/iv7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:src="@drawable/pic7" />
+
+        <ImageView
+            android:id="@+id/iv8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:src="@drawable/pic8" />
+
+        <ImageView
+            android:id="@+id/iv9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:src="@drawable/pic9" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnResult"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="투표 종료" />
+
+</LinearLayout>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" 자동보기 시작 " />
+
+        <Button
+            android:id="@+id/btnStop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" 자동보기 정지 " />
+    </LinearLayout>
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/pic1" />
+
+        <ImageView
+            android:id="@+id/iv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/pic2" />
+
+        <ImageView
+            android:id="@+id/iv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/pic3" />
+
+        <ImageView
+            android:id="@+id/iv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/pic4" />
+
+        <ImageView
+            android:id="@+id/iv5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/pic5" />
+
+        <ImageView
+            android:id="@+id/iv6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/pic6" />
+
+        <ImageView
+            android:id="@+id/iv7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/pic7" />
+
+        <ImageView
+            android:id="@+id/iv8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/pic8" />
+
+        <ImageView
+            android:id="@+id/iv9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/pic9" />
+
+    </ViewFlipper>
+
+</LinearLayout>
+
+
+package com.cookandroid.a425p6;
+import androidx.appcompat.app.AppCompatActivity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.Toast;
+
+public class MainActivity extends AppCompatActivity  {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        setTitle("명화 선호도 투표");
+
+        final int voteCount[] = new int[9];
+        for (int i = 0; i < 9; i++)
+            voteCount[i] = 0;
+        // 9개의 이미지 버튼 객체배열
+        ImageView image[] = new ImageView[9];
+        // 9개의 이미지버튼 ID 배열
+        Integer imageId[] = { R.id.iv1, R.id.iv2, R.id.iv3, R.id.iv4, R.id.iv5,
+                R.id.iv6, R.id.iv7, R.id.iv8, R.id.iv9 };
+
+        final String imgName[] = { "독서하는 소녀", "꽃장식 모자 소녀", "부채를 든 소녀",
+                "이레느깡 단 베르양", "잠자는 소녀", "테라스의 두 자매", "피아노 레슨", "피아노 앞의 소녀들",
+                "해변에서" };
+
+        for (int i = 0; i < imageId.length; i++) {
+            final int index; // 주의! 꼭 필요함..
+            index = i;
+            image[index] = (ImageView) findViewById(imageId[index]);
+            image[index].setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
+
+                    // 투표수 증가.
+                    voteCount[index]++;
+                    Toast.makeText(getApplicationContext(),
+                            imgName[index] + ": 총 " + voteCount[index] + " 표",
+                            Toast.LENGTH_SHORT).show();
+                }
+            });
+        }
+
+        Button btnFinish = (Button) findViewById(R.id.btnResult);
+        btnFinish.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),
+                        ResultActivity.class);
+                intent.putExtra("VoteCount", voteCount);
+                intent.putExtra("ImageName", imgName);
+                startActivity(intent);
+            }
+        });
+
+    }
+}
+
+
+package com.cookandroid.a425p6;
+import androidx.appcompat.app.AppCompatActivity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.ViewFlipper;
+
+public class ResultActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.result);
+        setTitle("결과");
+
+        Intent intent = getIntent();
+        int[] voteResult = intent.getIntArrayExtra("VoteCount");
+
+
+        Integer ivID[] = {R.id.iv1, R.id.iv2, R.id.iv3, R.id.iv4,
+                            R.id.iv5, R.id.iv6, R.id.iv7, R.id.iv8, R.id.iv9};
+        Integer imID[] = {R.drawable.pic1, R.drawable.pic2, R.drawable.pic3, R.drawable.pic4,
+                            R.drawable.pic5, R.drawable.pic6, R.drawable.pic7, R.drawable.pic8, R.drawable.pic9};
+
+        ImageView iv[] = new ImageView[9];
+        int[] resultID = new int[9];
+
+//ImageView 배열 변수 iv에 대입
+        for(int i=0;i<9;i++){
+            iv[i]=(ImageView)findViewById(ivID[i]);
+        }
+
+//resultID 초기화 resultID는 순위를 정하는 역할
+        for(int i=0;i<9;i++){
+            resultID[i]=0;
+        }
+//순서 구하기
+        for(int i=0;i<8;i++){
+            for(int j=i+1;j<9;j++) {
+                if (voteResult[i] < voteResult[j])
+                    resultID[i]++;
+                else
+                    resultID[j]++;
+            }
+        }
+
+        for(int i=0;i<9;i++){
+            iv[resultID[i]].setImageResource(imID[i]);
+        }
+
+        Button btnStart, btnStop;
+        final ViewFlipper vFlipper;
+
+        btnStart = (Button) findViewById(R.id.btnStart);
+        btnStop = (Button) findViewById(R.id.btnStop);
+
+
+        vFlipper = (ViewFlipper) findViewById(R.id.viewFlipper1);
+
+        vFlipper.setFlipInterval(1000);
+
+        btnStart.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                vFlipper.startFlipping();
+            }
+        });
+
+        btnStop.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                vFlipper.stopFlipping();
+            }
+        });
+    }
+}
+
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cookandroid.a425p6">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.425p6">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ResultActivity"/>
+    </application>
+
+</manifest>
